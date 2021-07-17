@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+ion-icon, img, strong {
+  cursor: pointer;
+}
+
 /* INÍCIO TOPO FIXO DA PÁGINA */
 .topo {
   background-color: #ffffff;
@@ -72,6 +76,8 @@ a {
   display: flex;
   justify-content: center;
   gap: 2vw;
+
+  position: relative;
 }
 
 .conteudo .feed-principal {
@@ -79,6 +85,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  position: absolute;
+  left: 15vw;
 }
 
 .feed-principal .stories {
@@ -279,6 +288,9 @@ a {
   width: 300px;
   height: 100%;
   font-size: 14px;
+
+  position: fixed;
+  right: 15vw;
 }
 
 .sidebar .info-usuario {
@@ -372,11 +384,13 @@ a {
 
   .conteudo .feed-principal {
     margin-top: 0;
-    width: 100%;
+    gap: 30px;
+
+    position: initial;
   }
 
   .conteudo .feed-principal .stories {
-    width: 100%;
+    margin-top: 30px;
   }
 
   .conteudo .feed-principal .stories img {
@@ -386,13 +400,8 @@ a {
   .conteudo .feed-principal .posts {
     margin-top: 0;
     gap: 30px;
-    width: 100%;
   }
   
-  .conteudo .feed-principal .stories ion-icon {
-    display: none;
-  }
-
   .post .imagem-post {
     height: 100%;
   }  
@@ -429,12 +438,18 @@ a {
   .topo  input {
     display: none;
   }
-  .topo .botoes ion-icon {
-    display: none;
-  }
   .topo .botoes ion-icon:first-child {
     display: block;
     padding-right: 10px;
+  }
+
+  .conteudo .feed-principal {
+    gap: 0;
+    width: 100%;
+  }
+
+  .conteudo .feed-principal .stories {
+    margin-top: 0;
   }
  
 }
