@@ -87,7 +87,7 @@ ion-icon, img, strong {
   justify-content: center;
 
   position: absolute;
-  left: 15vw;
+  right: 39vw;
 }
 
 .feed-principal .stories {
@@ -283,6 +283,7 @@ ion-icon, img, strong {
 
 
 /* SIDEBAR */
+
 .conteudo .sidebar {
   margin-top: 3vh;
   width: 300px;
@@ -290,7 +291,7 @@ ion-icon, img, strong {
   font-size: 14px;
 
   position: fixed;
-  right: 15vw;
+  left: 62vw;
 }
 
 .sidebar .info-usuario {
@@ -450,6 +451,11 @@ ion-icon, img, strong {
 
   .conteudo .feed-principal .stories {
     margin-top: 0;
+    width: 100%;
+  }
+
+  .conteudo .feed-principal .posts {
+    width: 100%;
   }
  
 }
