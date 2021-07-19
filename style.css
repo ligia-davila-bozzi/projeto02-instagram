@@ -439,6 +439,9 @@ ion-icon, img, strong {
   .topo  input {
     display: none;
   }
+  .topo .botoes ion-icon {
+    display: none;
+  }
   .topo .botoes ion-icon:first-child {
     display: block;
     padding-right: 10px;
